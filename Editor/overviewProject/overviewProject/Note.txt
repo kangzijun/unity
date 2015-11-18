@@ -1,0 +1,14 @@
+unity editor
+一.目标：能给unity编写自定义功能辅助开发
+二.学习笔记总结
+1.unity自带对网络包传送快慢的控制，editor->Network Enumation提供了模拟几种速度的网络环境
+但是unity无法模拟使用socket的网络解决方案。因为Network Enumation影响的是NetWorkComponent
+、NetWorkClass相关组件
+2.集成环境Visual Studio但是各自拥有独立的complier，editor->References->Extenal Tools->
+Extenal Script Editor选择Visual studio
+3.Analytics和Updates的设置，IME在Unity中只支持Window.exe以及Window web
+4.特殊文件夹命名使用是内置的都有各自的意义常见有：Resources存放用于GameRuntime时需要加载
+的资源（经常操作）；Assets常用但是对AssetsDatabase来说是必须的；Editor用于存放对Unity做
+扩展的资源其中默认资源类似图片都可以放在Editor Default Resources中；Gizmos存放标签图片；
+Standard Assets与StreamingAssets用于特定资源的处理前者是Unity提供的标准资源或者多为视频等
+流资源；Plugins插件文件夹存放DLL文件；WebPlayerTemplates此文件夹中不会被complier。
